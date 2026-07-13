@@ -17,8 +17,8 @@ do
     echo "6. List EC2 Instances"
     echo "7. Start EC2 Instance"
     echo "8. Stop EC2 Instance"
-    echo "9. Exit"
-    echo "=============================================="
+echo "9. Describe EC2 Instance"
+echo "10. Exit"
 
     echo "Choose an option:"
     read -r choice
@@ -45,15 +45,18 @@ do
         7)
             "$SCRIPT_DIR/ec2/start_instance.sh"
             ;;
-        8)
+               8)
             "$SCRIPT_DIR/ec2/stop_instance.sh"
             ;;
         9)
+            "$SCRIPT_DIR/ec2/describe_instance.sh"
+            ;;
+        10)
             print_success "Exiting AWS Toolkit."
             exit 0
             ;;
         *)
-            print_error "Invalid option. Choose 1 to 9."
+            print_error "Invalid option. Choose 1 to 10."
             ;;
     esac
 

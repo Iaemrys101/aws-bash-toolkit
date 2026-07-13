@@ -24,6 +24,7 @@ A menu-driven Bash toolkit for managing AWS resources through the AWS CLI.
 - Bash
 - AWS CLI v2
 - Configured AWS credentials
+- View EC2 instance details
 
 ## Usage
 
